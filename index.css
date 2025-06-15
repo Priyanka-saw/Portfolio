@@ -1,0 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+  background-color: #000;
+}
+nav ul li {
+  color: #fff;
+}
