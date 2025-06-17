@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation form using js</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <h1 style="display: flex; align-items: center; justify-content: center; margin-bottom: 25px; text-decoration: underline;">Get in Touch</h1>
+
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter full name" id="contact-name" onkeyup="validateName()">
+                <span id="name-error"></span>
+            </div>
+
+            <div class="input-group">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="123 456 7890" id="contact-phone" onkeyup="validatePhone()">
+                <span id="phone-error"></span>
+ 
+            </div>
+
+            <div class="input-group">
+                <label>Email Id</label>
+                <input type="email" placeholder="abc@123gmail.com" id="contact-email" onkeyup="validateEmail()">
+                <span id="email-error"></span>
+
+            </div>
+
+            <div class="input-group">
+                <label>Feedback</label>
+                <textarea placeholder="Queries or any messages" rows="3" id="contact-message" onkeyup="validateMessage()"></textarea> 
+                <span id="messages-error"></span>
+           
+            </div>
+
+            <button onclick="return validateForm()">Submit</button>
+
+            <span id="Submit-error"></span>
+
+
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
