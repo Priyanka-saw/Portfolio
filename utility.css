@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  background-color: #5f7ed485;
+  transition: 0.3s;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #000000bd;
+  gap: 10px;
+  
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 7px 0 7px;
+  border: none;
+}
+
+nav .name {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2196f3;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.2rem;
+  box-shadow: 1px 1px 3px 2px #2196f3a1;
+}
+
+/* dark mode  */
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.theme-toggler span {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+nav .theme-toggler {
+  color: #fff;
+}
+.theme-toggler span.active {
+  opacity: 1;
+}

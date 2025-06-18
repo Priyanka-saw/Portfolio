@@ -1,42 +1,3 @@
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 10px;
-  background-color: #000000bd;
-  gap: 10px;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 7px 0 7px;
-  border: none;
-}
-
-nav .name {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #2196f3;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 1.2rem;
-  box-shadow: 1px 1px 3px 2px #2196f3a1;
-}
-
-body {
-  background-color: #5f7ed485;
-  color: black;
-  transition: 0.3s;
-}
-
 body.dark-mode {
   background-color: #121212;
   color: white;
@@ -54,11 +15,64 @@ nav .theme-toggler {
   opacity: 1;
 }
 
+/* container css */
 .container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+.container .img-bottom h5,
+h3,
+p {
+  margin-top: 0.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.container .para{
-  margin: 60px;
+.container .img-bottom h5 {
+  font-size: 1rem;
+}
+
+.container .img-bottom h3 {
+  font-size: 2.2rem;
+}
+.container .img-bottom p {
+  max-width: 70%;
+  margin: auto;
+  margin-top: 14px;
+  font-size: 0.9rem;
+  line-height: 20px;
+}
+.img-bottom-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 18px;
+  gap: 17px;
+}
+.img-bottom-btn button {
+  border: none;
+  outline: none;
+  background-color: #141a34;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  
+}
+.img-bottom-btn a{
+  text-decoration: none;
+}
+.img-bottom-btn button:hover{
+    background-color: #141a34e7;
+  transition: 0.3s;
+    
+
 }
