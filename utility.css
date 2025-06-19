@@ -15,6 +15,7 @@ nav {
   padding: 10px;
   background-color: #000000bd;
   gap: 10px;
+  box-shadow: 1px 4px 2px 0px rgba(0, 0, 0, 0.4);
   
 }
 nav a {
@@ -22,6 +23,8 @@ nav a {
   text-decoration: none;
   margin: 0 7px 0 7px;
   border: none;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
 nav .name {
