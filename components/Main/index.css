@@ -86,7 +86,7 @@ p {
 .about-container h3 {
   text-align: center;
   font-size: 2rem;
-  margin: 45px;
+  margin: 35px;
 }
 
 .about-content {
@@ -115,7 +115,6 @@ p {
   font-size: 16px;
   line-height: 1.6;
   margin: 0 0 20px 0;
-  
 }
 
 .about-container-card {
@@ -127,15 +126,76 @@ p {
 .about-container-card .card {
   flex: 1;
   min-width: 200px;
-  background: #f3eded61;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 0 8px #6081b5;
+  box-shadow: 0 0 8px #6081b5;  
 }
 
 .about-container-card p {
   margin-top: 42px;
 }
+/* project section */
+.project-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.project-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.project-section p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.project-section-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.project {
+  position: relative;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inside-project {
+  position: absolute;
+  bottom: 0;
+  background: #fff;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+.inside-project a {
+  color: #141a34;
+  text-decoration: none;
+}
+.inside-project a i {
+  margin-top: 10px;
+  font-size: 22px;
+}
+
+.inside-project h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.project:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* optional glow on hover */
+}
+
 /* footer */
 footer {
   margin: 50px 0 50px 0;
