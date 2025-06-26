@@ -199,6 +199,17 @@ p {
   transform: scale(1.03);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* optional glow on hover */
 }
+/* scroll animation */
+.scroll {
+   opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 1.5s ease, transform 1.5s ease;
+}
+.scroll.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 /* footer */
 footer {
@@ -219,4 +230,8 @@ footer {
 .footer-container-link ul a {
   text-decoration: none;
   color: #141a34;
+}
+.footer-container-link i{
+    font-size: 1.2rem;
+
 }
