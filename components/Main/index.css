@@ -15,6 +15,10 @@ nav .theme-toggler {
   opacity: 1;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* container css */
 .container {
   display: grid;
@@ -129,12 +133,10 @@ p {
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 0 8px #404a5a;
-  transition: transform 0.3s ease, 
-  box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .about-container-card .card:hover {
   transform: scale(1.03);
-
 }
 .about-container-card p {
   margin-top: 42px;
@@ -201,7 +203,7 @@ p {
 }
 /* scroll animation */
 .scroll {
-   opacity: 0;
+  opacity: 0;
   transform: translateY(60px);
   transition: opacity 1.5s ease, transform 1.5s ease;
 }
@@ -209,7 +211,6 @@ p {
   opacity: 1;
   transform: translateY(0);
 }
-
 
 /* footer */
 footer {
@@ -231,7 +232,6 @@ footer {
   text-decoration: none;
   color: #141a34;
 }
-.footer-container-link i{
-    font-size: 1.2rem;
-
+.footer-container-link i {
+  font-size: 1.2rem;
 }
