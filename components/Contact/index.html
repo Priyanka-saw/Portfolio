@@ -3,68 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact Us</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/utility.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>get in touch</title>
 </head>
 <body>
+    <section class="get-in-touch" id="contact">
+  <h2>Get in Touch</h2>
+  <p>I’m always open to new opportunities, collaborations, or just a friendly hello.</p>
 
-     <nav>
-      <div class="name">Priyanka</div>
+  <form class="contact-form" action="https://formspree.io/f/xdkzbngp" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
 
-      <div class="links">
-        <a href="/components/Main/">Home</a>
-        <a href="">About</a>
-        <a href="">LinkedIn</a>
-        <a href="">GitHub</a>
-        <a href="/components/Contact/">Contact Us</a>
-      </div>
-      
-      <div class="theme-toggler" id="themeToggler">
-        <span class="material-symbols-sharp active" id="lightModeIcon"
-        >light_mode</span
-        >
-      </div>
-    </nav>
-    <div class="container">
-        <form action="">
-            <h1 style="display: flex; align-items: center; justify-content: center; margin-bottom: 25px; text-decoration: underline;">Get in Touch</h1>
-
-            <div class="input-group">
-                <label>Full Name</label>
-                <input type="text" placeholder="Enter full name" id="contact-name" onkeyup="validateName()">
-                <span id="name-error"></span>
-            </div>
-
-            <div class="input-group">
-                <label>Phone Number</label>
-                <input type="tel" placeholder="123 456 7890" id="contact-phone" onkeyup="validatePhone()">
-                <span id="phone-error"></span>
- 
-            </div>
-
-            <div class="input-group">
-                <label>Email Id</label>
-                <input type="email" placeholder="abc@123gmail.com" id="contact-email" onkeyup="validateEmail()">
-                <span id="email-error"></span>
-
-            </div>
-
-            <div class="input-group">
-                <label>Feedback</label>
-                <textarea placeholder="Queries or any messages" rows="3" id="contact-message" onkeyup="validateMessage()"></textarea> 
-                <span id="messages-error"></span>
-           
-            </div>
-
-            <button onclick="return validateForm()">Submit</button>
-
-            <span id="Submit-error"></span>
-
-
-        </form>
-    </div>
 </body>
-<script src="script.js"></script>
 </html>
