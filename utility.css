@@ -47,7 +47,7 @@ nav .name {
   border-radius: 4px;
 }
 
-.hamburger {
+.mobile-menu-icon {
   display: none;
   font-size: 26px;
   color: white;
@@ -62,7 +62,7 @@ nav .name {
     padding: 10px 20px;
   }
 
-  .hamburger {
+  .mobile-menu-icon {
     display: block;
   }
 
