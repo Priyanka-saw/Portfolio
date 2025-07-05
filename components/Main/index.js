@@ -28,12 +28,15 @@ function revealOnScroll() {
 revealOnScroll();
 
 // navbar
-
-  const hamburger = document.getElementById('hamburger');
+    window.onload = function() {
+      alert("Welcome to Priyanka Saw’s Portfolio!");
+    };
+    
+  const mobileMenuIcon = document.getElementById('mobile-menu-icon');
   const navLinks = document.getElementById('navLinks');
   const links = document.querySelectorAll('#navLinks a');
 
-  hamburger.addEventListener('click', () => {
+  mobileMenuIcon.addEventListener('click', () => {
     navLinks.classList.toggle('show');
   });
 
