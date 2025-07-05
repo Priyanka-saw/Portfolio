@@ -28,9 +28,6 @@ function revealOnScroll() {
 revealOnScroll();
 
 // navbar
-    window.onload = function() {
-      alert("Welcome to Priyanka Saw’s Portfolio!");
-    };
     
   const mobileMenuIcon = document.getElementById('mobile-menu-icon');
   const navLinks = document.getElementById('navLinks');
