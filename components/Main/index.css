@@ -117,9 +117,9 @@ p {
 }
 
 .about-container-para p {
-  font-size: 16px;
-  line-height: 1.6;
-  margin: 0 0 20px 0;
+  font-size: 15px;
+  line-height: 1.5;
+  /* margin: 0 0 20px 0; */
 }
 
 .about-container-card {
@@ -129,6 +129,7 @@ p {
 }
 
 .about-container-card .card {
+  background: linear-gradient(to bottom right, #7bb8bf, #effad6);
   flex: 1;
   min-width: 200px;
   padding: 34px;
@@ -139,14 +140,11 @@ p {
 .about-container-card .card:hover {
   transform: scale(1.03);
 }
-.about-container-card p {
-  margin-top: 42px;
-}
+
 /* project section */
 .project-section {
   text-align: center;
   padding: 40px 20px;
-  /* margin-top: 15px; */
 }
 
 .project-section h2 {
@@ -180,7 +178,7 @@ p {
 .inside-project {
   position: absolute;
   bottom: 0;
-  background: #fff;
+  background: linear-gradient(to bottom right, #7bb8bfe6, #effad6);
   width: 100%;
   padding: 10px;
   text-align: center;
