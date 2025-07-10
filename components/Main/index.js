@@ -8,7 +8,6 @@ themeToggler.addEventListener("click", () => {
   lightIcon.classList.toggle("active");
 });
 
-// 
 window.addEventListener("scroll", revealOnScroll);
 
 function revealOnScroll() {
