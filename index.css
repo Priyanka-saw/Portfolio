@@ -35,10 +35,18 @@ nav a {
   font-weight: 500;
   padding: 5px 10px;
 }
-nav .links :hover{
+/* nav .links :hover{
   color: #a5785cf9;
 
+} */
+
+#navLinks a.active {
+  color: #ff9800; /* Highlight color */
+  font-weight: bold;
+  border-bottom: 2px solid #ff9800;
 }
+
+
 
 /* logo */
 nav .name {
